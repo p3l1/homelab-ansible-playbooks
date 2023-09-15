@@ -1,0 +1,11 @@
+---
+- name: Update and Upgrade
+  hosts: all
+
+  tasks:
+    - name: Upgrade all installed packages
+      tags: add
+      ansible.builtin.apt:
+        update_cache: true
+        upgrade: true
+        cache_valid_time: 3600

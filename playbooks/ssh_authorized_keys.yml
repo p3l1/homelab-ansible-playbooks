@@ -1,7 +1,6 @@
 ---
 - name: Manage SSH keys
   hosts: all
-  remote_user: root
 
   vars:
     new_pubkeys:
